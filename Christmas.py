@@ -64,9 +64,9 @@ while True:
     for i in range(NUM_LEDS):
         # Write values to the LED Strip.  Loops through the Array of LED Values entered Above
         led_strip.set_rgb(i,
-            rgbArray[current_array_pos].r,
-            rgbArray[current_array_pos].g,
-            rgbArray[current_array_pos].b)
+            int(rgbArray[current_array_pos].r * BRIGHTNESS),
+            int(rgbArray[current_array_pos].g * BRIGHTNESS),
+            int(rgbArray[current_array_pos].b * BRIGHTNESS))
         current_array_pos = current_array_pos + 1
         
         # time.sleep(0.1)
