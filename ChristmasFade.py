@@ -54,7 +54,7 @@ color_black  = RGBValue(0, 0, 0)
 color_white  = RGBValue(255,255,255)
 color_red    = RGBValue(215, 20, 20)
 color_green  = RGBValue(0, 255, 0)
-color_blue   = RGBValue(35, 35, 190)
+color_blue   = RGBValue(15, 15, 235)
 color_purple = RGBValue(127, 0, 127)
 color_cyan   = RGBValue(0, 255, 255)
 color_pink   = RGBValue(255, 20, 203)
@@ -69,29 +69,43 @@ color_silver = RGBValue(192,192,192)
 # Add values to the RGB Array
 range_value = 2
 
-for i in range(range_value):
-	rgbArray.append(color_green)
-for i in range(range_value):
-	rgbArray.append(color_red)
-for i in range(range_value): 
-	rgbArray.append(color_blue)
-for i in range(range_value):
-	rgbArray.append(color_gold)
-for i in range(range_value):
-	rgbArray.append(color_silver)
-for i in range(range_value):
-	rgbArray.append(color_spanishorange)
-for i in range(range_value):
-	rgbArray.append(color_yellow)
+#for i in range(range_value):
+#	rgbArray.append(color_green)
+#for i in range(range_value):
+#	rgbArray.append(color_red)
+#for i in range(range_value): 
+#	rgbArray.append(color_blue)
+#for i in range(range_value):
+#	rgbArray.append(color_gold)
+#for i in range(range_value):
+#	rgbArray.append(color_silver)
+#for i in range(range_value):
+#	rgbArray.append(color_spanishorange)
+#for i in range(range_value):
+#	rgbArray.append(color_yellow)
 
-gradiant_size = 10
+gradiant_size = 5
 
-#RGBGradiant(color_yellow, color_orange, gradiant_size)
-#RGBGradiant(color_orange, color_spanishorange, gradiant_size)
-#RGBGradiant(color_spanishorange, color_red, gradiant_size)
-#RGBGradiant(color_red, color_spanishorange, gradiant_size)
-#RGBGradiant(color_spanishorange, color_orange, gradiant_size)
-#RGBGradiant(color_orange, color_yellow, gradiant_size)
+RGBGradiant(color_black, color_red, gradiant_size)
+RGBGradiant(color_red, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_green, gradiant_size)
+RGBGradiant(color_green, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_blue, gradiant_size)
+RGBGradiant(color_blue, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_gold, gradiant_size)
+RGBGradiant(color_gold, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_silver, gradiant_size)
+RGBGradiant(color_silver, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_spanishorange, gradiant_size)
+RGBGradiant(color_spanishorange, color_black, gradiant_size)
+
+RGBGradiant(color_black, color_yellow, gradiant_size)
+RGBGradiant(color_yellow, color_black, gradiant_size)
 
 #rgbArray.append(color_red)
 #rgbArray.append(color_green)
@@ -150,6 +164,6 @@ while True:
         start_array_pos = len(rgbArray) - 1
 
     # Delay to determine the speed of the scrolling LED's
-    time.sleep(0.25)
+    time.sleep(0.15)
     #time.sleep(0.1)
 
